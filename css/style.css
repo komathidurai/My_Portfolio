@@ -554,4 +554,29 @@ img {
   .portfolio__banner {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* Mobile-specific adjustments for image grids */
+@media (max-width: 480px) {
+  .service__grid,
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .service__card,
+  .portfolio__card {
+    width: 100%;
+  }
+
+  .service__card img,
+  .portfolio__card img {
+    max-width: 80px;
+    width: 100%;
+  }
+
+  .section__container {
+    padding: 2rem 0.5rem;
+  }
+}
+
 }
